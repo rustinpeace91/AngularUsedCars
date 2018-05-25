@@ -1,0 +1,6 @@
+Angular Used Car salesmen 
+-should have a landing page asking the user if they want to buy or sell a Car
+-if they want to buy a car it will display a list of automobiles 
+    -automobiles can be sorted by make
+
+    
