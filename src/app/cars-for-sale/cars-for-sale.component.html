@@ -1,0 +1,30 @@
+
+    <mat-card>
+      <mat-card-title>Cars for sale</mat-card-title>
+      <mat-card-content>
+      <mat-list>
+        <mat-list-item *ngFor = "let car of cars"
+          [class.selected] = "car === selectedCar"
+          (click) = "onSelect(car)">
+          <button mat-button>{{car.make}}   {{car.model}}</button>  
+          <mat-divider></mat-divider>
+        </mat-list-item>
+      </mat-list>
+    </mat-card-content>
+    </mat-card>
+
+
+
+    <div *ngIf="selectedCar">
+
+        <h2>{{ selectedCar.name | uppercase }} Details</h2>
+        <div><span>id: </span>{{selectedCar.id}}</div>
+        <div>
+            <p>name: {{selectedCar.make}} {{selectedCar.model}}</p>
+            <p>year: {{selectedCar.year}}</p>
+            <p>miles: {{selectedCar.miles}}</p>
+            <p>price: ${{selectedCar.price}}</p>
+          
+        </div>
+      
+      </div>

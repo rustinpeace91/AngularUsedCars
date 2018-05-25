@@ -9,7 +9,8 @@ import {
     MatToolbarModule,
     MatSidenavModule,
     MatTabsModule,
-    MatCardModule
+    MatCardModule,
+    MatListModule
 } from '@angular/material';
 /*import {MatMenuModule, MatMenu} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -21,22 +22,26 @@ import {MatCardModule} from '@angular/material/card';*/
 @NgModule({
 
     imports: [
-      MatButtonModule,
+      MatButtonModule, 
+      MatCheckboxModule,
       MatMenuModule,
       MatToolbarModule,
       MatSidenavModule,
       MatTabsModule,
-      MatCardModule
+      MatCardModule,
+      MatListModule
       
     ],
 
     exports: [
-        MatButtonModule,
-        MatMenuModule,
-        MatToolbarModule,
-        MatSidenavModule,
-        MatTabsModule,
-        MatCardModule
+      MatButtonModule, 
+      MatCheckboxModule,
+      MatMenuModule,
+      MatToolbarModule,
+      MatSidenavModule,
+      MatTabsModule,
+      MatCardModule,
+      MatListModule
     ],
     
     declarations: []

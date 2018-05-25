@@ -9,6 +9,7 @@ import { BrowserAnimationsModule}           from '@angular/platform-browser/anim
 import { AppComponent }                     from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TitleComponent } from './title/title.component';
+import { CarsForSaleComponent } from './cars-for-sale/cars-for-sale.component';
 
 
 @NgModule({
@@ -16,6 +17,7 @@ import { TitleComponent } from './title/title.component';
     AppComponent,
     DashboardComponent,
     TitleComponent,
+    CarsForSaleComponent,
   ],
   imports: [
     MaterialModule,
@@ -23,8 +25,6 @@ import { TitleComponent } from './title/title.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
- 
-    
   ],
   providers: [],
   bootstrap: [AppComponent]
