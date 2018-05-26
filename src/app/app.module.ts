@@ -10,6 +10,8 @@ import { AppComponent }                     from './app.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { TitleComponent } from './title/title.component';
 import { CarsForSaleComponent } from './cars-for-sale/cars-for-sale.component';
+import { SellCarComponent } from './sell-car/sell-car.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -19,6 +21,7 @@ import { CarsForSaleComponent } from './cars-for-sale/cars-for-sale.component';
     DashboardComponent,
     TitleComponent,
     CarsForSaleComponent,
+    SellCarComponent,
   ],
   imports: [
     MaterialModule,
@@ -26,6 +29,7 @@ import { CarsForSaleComponent } from './cars-for-sale/cars-for-sale.component';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
