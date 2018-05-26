@@ -1,15 +1,49 @@
-<div class="example-container">
-    <mat-form-field>
-      <input matInput placeholder="Input">
-    </mat-form-field>
-  
-    <mat-form-field>
-      <textarea matInput placeholder="Textarea"></textarea>
-    </mat-form-field>
-  
-    <mat-form-field>
-      <mat-select placeholder="Select">
-        <mat-option value="option">Option</mat-option>
-      </mat-select>
-    </mat-form-field>
-  </div>
+<div id = "sell-container">
+  <mat-card class= "sell-card">
+    <div class = "sell-form" >
+        <mat-form-field>
+          <input matInput placeholder="Make">
+        </mat-form-field>
+      
+        <mat-form-field>
+            <input matInput placeholder="Model">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Year">
+          </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Miles">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput placeholder="Offer">
+        </mat-form-field>
+        <mat-form-field>
+          <textarea matInput placeholder="Textarea"></textarea>
+        </mat-form-field>
+        <mat-form-field>
+          <mat-select placeholder="Select">
+            <mat-option value="option">Option</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p>
+
+            <button mat-raised-button color="primary">
+    
+              Submit
+            </button>
+            Click here to sell your car!
+          </p>
+      </div>
+  </mat-card>
+
+  <mat-card class = "sell-instructions">
+    <h2>Instructions for selling your car</h2>
+    <mat-list class = "instructiosn-list">
+      <mat-list-item>Type the details of your vehicle into the form</mat-list-item>
+      <mat-list-item>Leave a URL to an image of your car if you would like</mat-list-item>
+      <mat-list-item>Enter the amount of money you would like to recieve</mat-list-item>
+      <mat-list-item>Click the Submit button. We will assess your offer and make you a counter offer </mat-list-item>
+    </mat-list>
+
+  </mat-card>
+</div>

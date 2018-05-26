@@ -18,7 +18,8 @@
 
 
     <div class = "details">
-
+      <mat-card>
+        <mat-card-content>
         <h2><span *ngIf="selectedCar">{{ selectedCar.make}}  {{ selectedCar.model}} </span>Details</h2>
         <div *ngIf="selectedCar"><span>id: </span>{{selectedCar.id}}</div>
         <div *ngIf="selectedCar">
@@ -28,6 +29,8 @@
             <p>price: ${{selectedCar.price}}</p>
           
         </div>
+      </mat-card-content>
+      </mat-card>
       
     </div>
   </div>
