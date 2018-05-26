@@ -1,5 +1,7 @@
 
-    <mat-card>
+    
+  <div class = "cars-for-sale">
+    <mat-card class = "car-list">
       <mat-card-title>Cars for sale</mat-card-title>
       <mat-card-content>
       <mat-list>
@@ -15,11 +17,11 @@
 
 
 
-    <div *ngIf="selectedCar">
+    <div class = "details">
 
-        <h2>{{ selectedCar.name | uppercase }} Details</h2>
-        <div><span>id: </span>{{selectedCar.id}}</div>
-        <div>
+        <h2><span *ngIf="selectedCar">{{ selectedCar.make}}  {{ selectedCar.model}} </span>Details</h2>
+        <div *ngIf="selectedCar"><span>id: </span>{{selectedCar.id}}</div>
+        <div *ngIf="selectedCar">
             <p>name: {{selectedCar.make}} {{selectedCar.model}}</p>
             <p>year: {{selectedCar.year}}</p>
             <p>miles: {{selectedCar.miles}}</p>
@@ -27,4 +29,5 @@
           
         </div>
       
-      </div>
+    </div>
+  </div>

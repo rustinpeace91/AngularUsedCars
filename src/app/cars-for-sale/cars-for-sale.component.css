@@ -1,0 +1,12 @@
+.cars-for-sale {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.car-list {
+    flex:1;
+}
+
+.details{
+    flex:4;
+}
