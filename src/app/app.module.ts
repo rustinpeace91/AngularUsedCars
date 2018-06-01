@@ -12,6 +12,7 @@ import { TitleComponent } from './title/title.component';
 import { CarsForSaleComponent } from './cars-for-sale/cars-for-sale.component';
 import { SellCarComponent } from './sell-car/sell-car.component';
 import { AppRoutingModule } from './app-routing.module';
+import { LandingPageComponent } from './landing-page/landing-page.component';
 
 
 
@@ -22,6 +23,7 @@ import { AppRoutingModule } from './app-routing.module';
     TitleComponent,
     CarsForSaleComponent,
     SellCarComponent,
+    LandingPageComponent,
   ],
   imports: [
     MaterialModule,

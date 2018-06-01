@@ -1,4 +1,12 @@
 <mat-toolbar>
     <button mat-raised-button routerLink="/cars-for-sale">Buy Cars</button>
     <button mat-raised-button routerLink="/sell-your-car">Sell Cars</button>
+
+    <!--Back button is only available if checkIfHome returns false (home page)-->
+    <span *ngIf="!checkIfHome()">
+        <button  mat-raised-button (click) = "goBack()">back</button>
+    </span>
+
+
 </mat-toolbar>
+
