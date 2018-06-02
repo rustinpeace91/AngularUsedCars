@@ -11,3 +11,10 @@
 .selected-car{
     margin-right:30%;
 }
+
+@media (max-width: 520px) { 
+    .car-image{
+        margin-top:30px;
+        width:100%;
+    }
+ }
