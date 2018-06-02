@@ -2,7 +2,30 @@
     background-image: url("../../assets/images/cobra.jpg");
     background-size: cover;
     margin-bottom: 0rem;
-    height:600px;
+    height:400px;
 
 }
 
+#leading-text{
+    padding:3rem 2rem;
+}
+
+.action-bar-icon {
+    font-size:72px;
+    width:72px;
+}
+
+
+
+.container {
+    margin:auto;
+    max-width:1440px;
+}
+
+.full-width{
+    width:100%;
+}
+
+.center-text{
+    text-align:center;
+}

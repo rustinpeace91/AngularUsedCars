@@ -1,14 +1,13 @@
 
-
-.cars-for-sale {
-    display:flex;
-    flex-wrap:wrap;
+.cars-for-sale-container{
+    min-height:1080px;
 }
 
-.car-list {
-    flex:1;
+.car-image {
+    max-width:400px;
+ 
 }
 
-.details{
-    flex:4;
+.selected-car{
+    margin-right:30%;
 }

@@ -1,40 +1,55 @@
 
     
-  <div class = "cars-for-sale">
-    <mat-card class = "car-list">
-      <mat-card-title>Cars for sale</mat-card-title>
-      <mat-card-content>
-      <mat-list>
-        <mat-list-item *ngFor = "let car of cars"
-          [class.selected] = "car === selectedCar"
-          (click) = "onSelect(car)">
-          <button mat-button>{{car.make}}   {{car.model}}</button>  
-          <mat-divider></mat-divider>
-        </mat-list-item>
-      </mat-list>
-    </mat-card-content>
-    </mat-card>
-
-
-
-    <div class = "details">
-      <mat-card>
+<div class = "cars-for-sale-container">
+  <div class = "cars-for-sale" fxLayout = "row" fxLayout.sm = "column wrap" fxLayout.xs = "column wrap">
+    <div fxFlex = "25%" >
+      <mat-card class = "car-list">
+        <mat-card-title>Cars for sale</mat-card-title>
         <mat-card-content>
-        <h2><span *ngIf="selectedCar">{{ selectedCar.make}}  {{ selectedCar.model}} </span>Details</h2>
-        <div *ngIf="selectedCar"><span>id: </span>{{selectedCar.id}}</div>
-        <div *ngIf="selectedCar">
-            <p>name: {{selectedCar.make}} {{selectedCar.model}}</p>
-            <p>year: {{selectedCar.year}}</p>
-            <p>miles: {{selectedCar.miles}}</p>
-            <p>price: ${{selectedCar.price}}</p>
-            <button mat-raised-button color="primary">
-    
-              Buy Now
-            </button>
-          
-        </div>
+        <mat-list>
+          <mat-list-item *ngFor = "let car of cars"
+            [class.selected] = "car === selectedCar"
+            (click) = "onSelect(car)">
+            <button mat-button>{{car.make}}   {{car.model}}</button>  
+            <mat-divider></mat-divider>
+          </mat-list-item>
+        </mat-list>
       </mat-card-content>
       </mat-card>
-      
     </div>
+
+
+
+      <div class = "details" fxFlex = "75%">
+        
+        <mat-card>
+          <mat-card-content>
+          <h2><span *ngIf="selectedCar">{{ selectedCar.make}}  {{ selectedCar.model}} </span>Details</h2>
+          <div *ngIf="selectedCar"><span>id: </span>{{selectedCar.id}}</div>
+          <div class = " selected-car" *ngIf="selectedCar" 
+                fxLayout = "row" 
+                fxLayoutAlign = "space-around-center" 
+                fxLayout.xs = "column wrap"
+            >
+            <div class = "car-stats" fxFlex = "67" fxFlex.sm = "100%" fxFlex.xs = "100%">
+              <p>name: {{selectedCar.make}} {{selectedCar.model}}</p>
+              <p>year: {{selectedCar.year}}</p>
+              <p>miles: {{selectedCar.miles}}</p>
+              <p>price: ${{selectedCar.price}}</p>
+              <button mat-raised-button color="primary">
+                Buy Now
+              </button>
+            </div>
+      
+            <div class = "car-image-container" fxFlex = "33" fxFlex.sm = "100" fxFlex.xs = "100">
+              <div>
+                <img class = "car-image"  src = {{selectedCar.img}}>
+              </div>
+            </div>
+          </div>
+        </mat-card-content>
+        </mat-card>
+      </div>
+        
   </div>
+</div>

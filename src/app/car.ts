@@ -5,5 +5,6 @@ export class Car {
     year: number;
     miles: number;
     price: number;
+    img: string;
   }
   

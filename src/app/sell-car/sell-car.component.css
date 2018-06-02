@@ -1,7 +1,7 @@
 #sell-container {
   display: flex;
   flex-wrap:wrap;
-
+  min-height:1080px;
 }
 
 .sell-card{

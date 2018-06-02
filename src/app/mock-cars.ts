@@ -4,10 +4,11 @@ export const CARS: Car[] = [
     {
         id:1,
         make: "Toyota",
-        model: "Celica",
+        model: "AE86",
         year: 1986, 
         miles: 40000,
-        price: 4500
+        price: 4500,
+        img: "https://i.imgur.com/WJHb3Kg.jpg"
     },
     {
         id:2,
@@ -15,7 +16,8 @@ export const CARS: Car[] = [
         model: "Civic",
         year: 1992, 
         miles: 5000,
-        price: 5500
+        price: 5500,
+        img: "https://i.imgur.com/3emjkQ6.jpg"
     },
     {
         id:3,
@@ -23,7 +25,8 @@ export const CARS: Car[] = [
         model: "Impala",
         year: 1964, 
         miles: 5000,
-        price: 25000
+        price: 25000,
+        img: "https://i.imgur.com/dahhxbn.jpg"
     },
     {
         id:4,
@@ -31,7 +34,8 @@ export const CARS: Car[] = [
         model: "Eclipse",
         year: 1996, 
         miles: 46000,
-        price: 14500
+        price: 14500,
+        img: "https://i.imgur.com/yJhLCkc.jpg"
     },
 
 ];
