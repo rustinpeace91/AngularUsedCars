@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Used Car Salesman';
+  title = 'Used Car Sales App';
 
   constructor(private httpClient:HttpClient){}
 
