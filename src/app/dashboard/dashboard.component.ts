@@ -23,7 +23,7 @@ export class DashboardComponent implements OnInit {
   ngOnInit() {
   }
 
-
+  //Uses the dashboard service to check if the user is on the home page
   checkIfHome(){
         return this.dashBoardService.getIsHome();
   }
