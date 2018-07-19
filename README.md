@@ -6,6 +6,8 @@ This app is a demo of a Used Car storefront built in Angular 6. For now it is ju
 A Live version of the App can be found here: https://rustinpeace91.github.io/AngularUsedCars/
 
 
+![Angular Used Cars](http://www.isaaclubanko.com/assets/images/angularusedcars.jpg)
+
 
 ## Angular Notes
 
