@@ -14,13 +14,13 @@ const httpOptions = {
 @Injectable({ providedIn: 'root' })
 
 export class CarService {
-    private carsUrl = 'api/cars'; 
+    private carsUrl = 'http://localhost:3000/cars';
 
     constructor(
         private http: HttpClient,
     ) { }
 
     getCars (): Observable<Car[]> {
-    return this.http.get<Car[]>(this.carsUrl)
+        return this.http.get<Car[]>(this.carsUrl);
     }
 }
