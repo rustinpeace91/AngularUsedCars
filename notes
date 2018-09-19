@@ -3,4 +3,5 @@ Angular Used Car salesmen
 -if they want to buy a car it will display a list of automobiles 
     -automobiles can be sorted by make
 
-    
+getting data froma  database example: 
+https://github.com/didinj/mean-stack-crud-example/blob/master/src/app/book/book.component.ts

@@ -18,7 +18,6 @@ app.use(bodyParser.json());
 var carsRoutes = require("./routes/car");
 app.use(carsRoutes);
 
-// sets view engine to handlebars
 
 // app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 // app.set('view engine', 'handlebars');
