@@ -6,5 +6,4 @@ export class Car {
     miles: number;
     price: number;
     img: string;
-  }
-  
+  } 

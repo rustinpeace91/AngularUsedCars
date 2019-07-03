@@ -1,0 +1,14 @@
+{
+    "posts": [
+        {
+            "id":1,
+            "make": "Toyota",
+            "model": "GT-86",
+            "year": 2015,
+            "miles": 2000,
+            "price": 9000,
+            "img": "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/toyota-gt86-front-3-4_0.jpg?itok=dqibziHj"
+        }
+    ]
+
+}
