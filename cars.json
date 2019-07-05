@@ -1,5 +1,5 @@
 {
-    "posts": [
+    "cars": [
         {
             "id":1,
             "make": "Toyota",
@@ -8,6 +8,14 @@
             "miles": 2000,
             "price": 9000,
             "img": "https://www.autocar.co.uk/sites/autocar.co.uk/files/styles/gallery_slide/public/images/car-reviews/first-drives/legacy/toyota-gt86-front-3-4_0.jpg?itok=dqibziHj"
+        }, 
+        {
+            "id": 2,
+            "make": "Nissan",
+            "model": "GTR R32",
+            "year": 1990, 
+            "price": 30000,
+            "img": "http://classiccardb.com/uploads/postfotos/nissan-skyline-gtr-r32-rb26dett-500hp-vin-bnr32-007338-2.JPG"
         }
     ]
 
