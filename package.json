@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && node ./bin/www",
+    "start": "ng serve & json-server --watch cars.json --routes routes.json",
     "backend": "node ./bin/www",
     "build": "ng build",
     "test": "ng test",
